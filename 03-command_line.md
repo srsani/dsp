@@ -24,7 +24,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls': list of the file and folders
+'ls -a': list of the files and folders and plus the hidden files and folders
+'ls -l': from left to write: file Type, file permissions, number of links, owner name, owner group. file size time of the last change, the name of the file or folder.
+'ls -lh': same as 'ls -l' but print he file size in a MB... format.
+'ls -lah': same as 'ls -lh' but includes hidden files;
+'ls -t': sort files and folders by time.
+'ls -Glp': high light the folders.  
 
 ---
 
@@ -32,7 +38,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -1; ls -1lG; ls -m; ls -f; ls -fG;
 
 ---
 
@@ -40,7 +46,5 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > It apply an operation to a set of folder or files.
+For instance with the following command we can print a hello to the beginning of each files as being printed on the screen.  ls -1 | xargs -n 1 echo 'Hello'
